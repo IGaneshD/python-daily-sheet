@@ -18,3 +18,7 @@
 
 # print(timeit.timeit("whileFunction()", globals=globals(), number=5))
 # print(timeit.timeit("forFunction()", globals=globals(), number=5))
+
+from abc import ABC, abstractmethod
+
+
