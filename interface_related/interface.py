@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-import factory
+import factory as f
 
 class Interface(ABC):
     
@@ -13,5 +13,10 @@ class Interface(ABC):
 #     def method1(self, *args):
 #         pass
 
-obj = factory.objectfactory(1,2,3,4)
-obj.method1()
+
+
+
+
+if __name__=="__main__":
+    obj = f.objectfactory(1,2,3,4)
+    obj.method1()
