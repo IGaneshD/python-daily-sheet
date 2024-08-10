@@ -1,6 +1,7 @@
 from interface import Interface
+from factory import objectfactory
 
-class InterfaceImp(Interface):
+class InterfaceImp(Interface, object):
     
     def __init__(self, *args):
         self.args = args
@@ -9,4 +10,5 @@ class InterfaceImp(Interface):
         print(self.args)
 
 
-
+obj = objectfactory(InterfaceImp, 1,2,3,4)
+obj.method1()

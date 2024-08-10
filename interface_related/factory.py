@@ -1,5 +1,8 @@
 from interface import Interface
-from implementation import InterfaceImp
 
-def objectfactory(*args) -> Interface:
-    return InterfaceImp(*args)
+def objectfactory(*args, cls) -> Interface:
+    # super(type, object)
+    # obj = super(cls, cls).__new__(cls)
+    obj = cls.__new__(cls)
+    obj.__init__(*args)
+    return obj
