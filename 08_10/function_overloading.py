@@ -16,4 +16,3 @@ def _(value: str) -> None :
 
 process(15)
 process("Hello")
-
