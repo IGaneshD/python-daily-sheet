@@ -1,0 +1,6 @@
+{
+  "name": "Ganesh Deshmukh",
+  "email": "ganesh.onweb@gmail.com",
+  "username": "Ganesh@22",
+  "age": 23
+}
